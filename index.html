@@ -1,34 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Michael Ocampo | IT Student</title>
-    <style>
-        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 20px; }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; }
-        .tag { background: #3498db; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>John Michael A. Ocampo</h1>
-    <p><strong>Incoming BSIT Student @ BPSU</strong></p>
 
-    <h3>🚀 Tech Stack</h3>
-    <p>
-        <span class="tag">C++</span>
-        <span class="tag">Linux (Fedora)</span>
-        <span class="tag">Arduino</span>
-        <span class="tag">Git</span>
-    </p>
+  <!-- ============ NAV ============ -->
+  <header class="site-nav">
+    <a href="#top" class="nav-name">Your Name</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <h3>🛠️ Projects</h3>
-    <ul>
-        <li><strong>Solar-Powered Eco-Filter:</strong> A water purification system using Arduino and TDS/Turbidity sensors.</li>
-        <li><strong>Code-Library:</strong> A collection of C++ fundamentals hosted on GitHub.</li>
-    </ul>
+  <main id="top">
 
-    <h3>📸 Photography</h3>
-    <p>Interested in photographic composition and visual storytelling.</p>
+    <!-- ============ HERO / ABOUT ============ -->
+    <section class="hero">
+      <p class="hero-role"><!-- EDIT: your current role/status -->Computer science student, learning backend development</p>
+      <h1><!-- EDIT: a one-line intro/headline -->I build small things while learning how the bigger ones work.</h1>
+      <p class="hero-body">
+        <!-- EDIT: 2-3 sentences about you: what you're learning, what you're working toward, and something specific (not generic filler) -->
+        I'm currently working through Java fundamentals with the goal of landing a backend
+        developer role. This site collects the projects and exercises I've built along the way —
+        it'll keep growing as I do.
+      </p>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="project-list">
+
+        <!-- PROJECT ENTRY — duplicate this <article> block for each new project -->
+        <article class="project">
+          <div class="project-heading">
+            <h3><!-- EDIT: project name -->Project Name</h3>
+            <span class="project-stack"><!-- EDIT: e.g. Java, JavaFX -->Java</span>
+          </div>
+          <p class="project-desc">
+            <!-- EDIT: 1-2 sentences — what it does and one specific technical detail worth mentioning -->
+            A short description of what this project does and one interesting decision you made
+            while building it.
+          </p>
+          <div class="project-links">
+            <a href="#"><!-- EDIT: link to repo -->Code</a>
+            <a href="#"><!-- EDIT: link to live demo, or delete this line if none -->Live demo</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-heading">
+            <h3>Project Name</h3>
+            <span class="project-stack">C++</span>
+          </div>
+          <p class="project-desc">
+            A short description of what this project does and one interesting decision you made
+            while building it.
+          </p>
+          <div class="project-links">
+            <a href="#">Code</a>
+          </div>
+        </article>
+
+        <!-- Add more <article class="project"> blocks here as you finish things -->
+
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <!-- EDIT: keep this honest — list what you actually know, group however makes sense to you -->
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <p>Java, C++, HTML/CSS</p>
+      </div>
+      <div class="skill-group">
+        <h3>Currently learning</h3>
+        <p>Java fundamentals, object-oriented design</p>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <p>Git, GitHub</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="contact-links">
+        <!-- EDIT: your real links -->
+        <a href="mailto:you@email.com">Email</a>
+        <a href="https://github.com/yourusername">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <!-- EDIT: optional footer note -->
+    <p>Built by hand, updated as I go.</p>
+  </footer>
+
 </body>
 </html>
